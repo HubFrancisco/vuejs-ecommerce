@@ -13,12 +13,12 @@
         :prevButtonProps="{ severity: 'secondary' }"
         :showIndicators="false"
       >
-        <template #item="slotProps">
-          <CardProduct :items="slotProps" />
+        <template #item="{data}">
+          <CardProduct :items="data" />
         </template>
       </Carousel>
     </div>
-    <div v-else class="card flex justify-center items-center">
+    <div v-else class="card flex justify-center items-center h-[400px]">
       <ProgressSpinner
         style="width: 50px; height: 50px"
         strokeWidth="8"

@@ -5,7 +5,7 @@
             <template  #item="{ item }">
             <button class="cursor-pointer" @click="$emit('handleFilterProduct', item.url)">
                 <span :class="item.icon"></span>
-                <span>{{ item.label }}</span>
+                <span class="capitalize">{{ item.label }}</span>
             </button>
             </template>
         </Breadcrumb>
